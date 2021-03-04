@@ -2,6 +2,108 @@
 
 {% block main %}
 	<main class="main-page">
+		<h1 class="visually-hidden">Sedona</h1>
+		<section class="promo">
+			<h2 class="visually-hidden">Промо Sedona</h2>
+			<p class="promo__lead">Седона - небольшой городок в Аризоне, заслуживающий большего!
+			<p class="promo__text">Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
+		</section>
 
+		<section class="advantages">
+			<h2 class="visually-hidden">Преимущества Седоны</h2>
+			<p class="advantages__lead">Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!</p>
+			<ol class="advantages__list">
+				<li class="advantages__lead-item">
+					<div class="features-block">
+						<h3 class="feature-block__heading">Настоящий городок</h3>
+						<span class="features-block__number">- № 1 -</span>
+						<p class="features-block__description">Седона - не атракцион для туристов, там течет своя жизнь</p>
+					</div>
+					<img class="features-pic" src="" width="" height="" alt="Дом Седоны">
+					<ul class="features-list">
+						<li class="features-list__item">
+							<h4 class="feature-list__heading">Жильё</h4>
+							<p class="features-list__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+						</li>
+						<li class="features-list__item">
+							<h4 class="feature-list__heading">Еда</h4>
+							<p class="features-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						</li>
+						<li class="features-list__item">
+							<h4 class="feature-list__heading">Сувениры</h4>
+							<p class="features-list__description">Не только китайского, но и местного производства!</p>
+						</li>
+					</ul>
+				</li>
+				<li class="advantages__lead-item">
+					<div class="features-block">
+						<h3 class="features-block__heading">Там есть мост дьявола</h3>
+						<span class="features-block__number">- № 2 -</span>
+						<p class="features-block__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+
+						<img class="features-pic" src="" width="" height="" alt="Дом Седоны">
+					</div>
+				</li>
+				<li class="advantages__item">
+					<div class="features-block">
+						<h3 class="features__heading">Небольшая площадь</h3>
+						<span class="features__number">- № 3 -</span>
+						<p class="features__text">Все достопримечательности находятся очень близко</p>
+					</div>
+				</li>
+				<li class="advantages__item">
+					<div class="features-block">
+						<h3 class="features__heading">Красивая дорога</h3>
+						<span class="features__number">- № 4 -</span>
+						<p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</div>
+				</li>
+				<li class="advantages__item">
+					<div class="features-block">
+						<h3 class="features__heading">Мало туристов</h3>
+						<span class="features__number">- № 5 -</span>
+						<p class="features__text">Большинство едет в Гранд Каньен и толпится там</p>
+					</div>
+				</li>
+			</ol>
+		</section>
+
+		<section class="page-part">
+			<h2 class="visually-hidden">Выбор даты поездки в Седону</h2>
+			<b class="page-part__lead">Заинтересовались?</b>
+			<p class="page-part__text">
+				Укажите предпологаемые даты поездки, <br>
+				и мы покажем вам лучшие предложения гостиниц в Седоне
+			</p>
+			<a class="page-part__form-button" href="!#">Поиск гостиницы в Седоне</a>
+			<form class="page-part__form" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend class="visually-hidden">Дата прибывания</legend>
+					<p class="page-part__field">
+						<label for="date_arrival">
+							Дата заезда: <input type="date" name="dates[]" id="date_arrival">
+						</label>
+					</p>
+					<p class="page-part__field">
+						<label for="date_departure">
+							Дата выезда: <input type="date" name="dates[]" id="date_departure">
+						</label>
+					</p>
+				</fieldset>
+				<fieldset>
+				<legend class="vissualy-hidden">Количество человек</legend>
+				<p class="page-part__field">
+					Взрослые: <button> - </button><input type="number" name="count[]" value="2"><button> + </button>
+				</p>
+				<p class="page-part__field">
+					Дети: <button> - </button><input type="number" name="count[]" value="0"><button> + </button>
+				</p>
+				</fieldset>
+				<p class="page-part__submit">
+					<input type="submit" value="Найти">
+				</p>
+			</form>
+			<img class="page-part__map" src="" width="" height="" alt="Седона на карте">
+		</section>
 	</main>
 {% endblock %}

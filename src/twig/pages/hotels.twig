@@ -1,0 +1,172 @@
+{% extends '../layout.twig' %}
+
+{% block main %}
+	<main class="main-page">
+		<section class="search-hostels">
+			<h2 class="visually-hidden">Поиск отелей в Седоне</h2>
+			<form class="search-form" action="https://echo.htmlacademy.ru">
+				<fieldset class="search-form__filter">
+					<legend class="search-form__infrastructure">Инфраструктура:</legend>
+					<p>
+						<label for="pool">
+							<input class="vissualy-hidden" type="checkbox" id="pool"> Бассейн
+						</label>
+					</p>
+					<p>
+						<label for="parking">
+							<input class="vissualy-hidden" type="checkbox" id="parking"> Парковка
+						</label>
+					</p>
+					<p>
+						<label for="wifi">
+							<input class="vissualy-hidden" type="checkbox" id="wifi"> Wi-Fi
+						</label>
+					</p>
+				</fieldset>
+				<fieldset class="search-form__filter">
+					<legend class="search-form__infrastructure">Тип жилья:</legend>
+					<p>
+						<label for="hostel">
+							<input class="vissualy-hidden" type="checkbox" id="hostel"> Гостиница
+						</label>
+					</p>
+					<p>
+						<label for="motel">
+							<input class="vissualy-hidden" type="checkbox" id="motel"> Мотель
+						</label>
+					</p>
+					<p>
+						<label for="apartments">
+							<input class="vissualy-hidden" type="checkbox" id="apartments"> Апартаменты
+						</label>
+					</p>
+				<fieldset class="search-form__filter">
+					<legend class="search-form__infrastructure">Стоимость в сутки (Р):</legend>
+					<div class="block-range">
+						<div class="block-range__price-range">
+							<div class="block-range__price-range-active"></div>
+							</div>
+							<button class="block-range__toggle block-range__toggle-min"></button>
+							<button class="block-range__toggle block-range__toggle-max"></button>
+						</div>
+					<div class="price-fields">
+						<label class="price-fields__shift" for="start">
+							От<input class="price-fields__range-value" id="start" name="from" type="text" value="0">
+						</label>
+						<label class="price-fields__shift" for="to">
+							До<input class="price-fields__range-value" id="to" name="to" type="text" value="3 000">
+						</label>
+					</div>
+				</fieldset>
+				<input type="submit" value="Показать">
+			</form>
+		</section>
+
+		<section class="sort">
+			<h2 class="vissualy-hidden">Сортировка отелей в Седоне</h2>
+			<b class="sort-value">Найдено: 3</b>
+			<b>Сортировка:</b>
+			<ul class="sort-list">
+				<li><a class="sort-list__item sort-list__item--active" href="#!">По цене</a></li>
+				<li><a class="sort-list__item" href="#!">По типу</a></li>
+				<li><a class="sort-list__item" href="#!">По названию</a></li>
+			</ul>
+			<ul class="sort-asc-desc">
+					<li>
+						<a class="sort__by-asc" href="#!">
+							<span class="visually-hidden">Сортировать по убыванию</span>
+						</a>
+					</li>
+					<li>
+						<a class="sort__by-desc" href="#!">
+							<span class="visually-hidden">Сортировать по возрастанию</span>
+						</a>
+					</li>
+				</ul>
+		</section>
+
+		<section class="hostels">
+			<h2>Найденные результаты отелей в Седоне</h2>
+			<ul class="hostels-list">
+				<li class="hostels-item">
+					<img src="" alt="">
+					<h3>Amara Resort & Spa</h3>
+					<span>Гостиница</span>
+					<span>От 4000 Р.</span>
+					<a href="!#">Подробнее</a>
+					<a href="!#">Забронировать</a>
+					<ul>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+					</ul>
+					<p>Рейтинг: 8,5</p>
+				</li>
+				<li class="hostels-item">
+					<img src="" alt="">
+					<h3>Desert Quail inn</h3>
+					<span>Мотель</span>
+					<span>От 3000 Р.</span>
+					<a href="!#">Подробнее</a>
+					<a href="!#">Забронировать</a>
+					<ul>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+					</ul>
+					<p>Рейтинг: 8,9</p>
+				</li>
+				<li class="hostels-item">
+					<img src="" alt="">
+					<h3>Villas at poco diablo</h3>
+					<span>Апартаменты</span>
+					<span>От 2000 Р.</span>
+					<a href="!#">Подробнее</a>
+					<a href="!#">Забронировать</a>
+					<ul>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+						<li>
+							<a href="!#"></a>
+						</li>
+					</ul>
+					<p>Рейтинг: 9,2</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+{% endblock %}

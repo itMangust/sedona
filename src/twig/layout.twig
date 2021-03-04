@@ -13,9 +13,49 @@
 </head>
 
 <body>
+	<header class="main-header">
+		<nav class="main-nav">
+			<a href="!#"><img class="main-nav__logo" src="" width="" height="" alt="Логотип Седона"></a>
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a class="main-nav__link" href="!#">Информация</a></li>
+				<li class="main-nav__item"><a class="main-nav__link" href="!#">Фото и видео</a></li>
+				<li class="main-nav__item"><a class="main-nav__link" href="!#">Карта штата</a></li>
+				<li class="main-nav__item"><a class="main-nav__link" href="!#">Гостиницы</a></li>
+			</ul>
+		</nav>
+	</header>
 
 	{% block main %}{% endblock %}
 
+	<footer class="main-footer">
+		<div class="main-footer__item">
+			<b class="main-footer__hashtag">#VisitSedona</b>
+			<a class="main-footer__phone" href="tel:+7956660166">Тел: +7 (495) 666-01-66</a>
+		</div>
+		<div class="main-footer__item">
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link social-list-__link--twitter" href="!#">
+						<span class="visually-hidden">Твиттер</span>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link social-list__link__facebook" href="!#">
+						<span class="visually-hidden">Фейсбук</span>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link social-list__link__youtube" href="!#">
+						<span class="visually-hidden">Ютуб</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main-footer__item">
+			<span class="main-footer__text">Website by</span>
+			<img class="main-footer__logo" src="" width="" height="" alt="Логотип HTML Academy">
+		</div>
+	</footer>
 	<script src="js/script.js"></script>
 	{% if IS_DEV %}
 		<script src="js/dev.js"></script>
